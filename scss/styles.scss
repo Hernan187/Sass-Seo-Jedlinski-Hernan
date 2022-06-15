@@ -1,0 +1,71 @@
+body{
+    background-color: black
+}
+
+/* estilos header */
+
+@import 'header';
+
+/* estilos de servicios */
+
+@import 'servicios';
+
+/* estilos de los headlines */
+
+$size: 20px;
+
+h2 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    margin: $size;
+    padding: 10px;
+}
+
+h3 {
+    color: white;
+    font-size: $size;
+    display: flex;
+    justify-content: center;
+    margin: $size;
+}
+
+/* estilos carrusel */
+
+@mixin proporciones($valor) {
+    width: $valor ;
+    height: $valor ;
+    
+}
+
+.carru {
+    @include proporciones(100%)   
+}
+
+/* estilo de estilos */
+
+@import 'estilos';
+
+/* estilo de productos */
+
+@import 'products';
+
+/* estilo de redes */
+
+@import 'redes';
+
+/* boton extra para scroll to top */
+
+$valor: 50px;
+
+.bot {
+    width: $valor;
+    height: $valor;
+    margin: $size;
+   
+}
+
+
+
